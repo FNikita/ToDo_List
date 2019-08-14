@@ -1,3 +1,5 @@
-function add(id) {
-    
+function add() {
+    alert("Hi");
 }
+
+
