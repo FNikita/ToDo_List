@@ -1,6 +1,7 @@
 .note{
     background-color: lime;
     grid-template-rows: 40px 15% 60px;
+    
     width: 500px;
 }
 
