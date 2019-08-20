@@ -1,16 +1,36 @@
+﻿/*var col_task = 0;
+const input = document.querySelector('input');
+input.onkeyup = logKey;
 
-var i = 0;
 function add() {
- //document.getElementById("list").innerHTML = "<li>" + document.getElementById("task").value + "<\li>";
- var ts = document.createElement("li");
- var str = document.createTextNode(document.getElementById("task").value);
- if (str != "") {
-    ts.appendChild(str);
-    document.getElementById("list").appendChild(ts);
- }
- document.getElementById("task").value = "";
- document.getElementById("name").innerHTML = "You have to make : ";
+    var str = document.createTextNode(document.getElementById("task").value);
+    if (str.length != 0) {
+        var ts = document.createElement("li");
+        var del = document.createElement("button");
+        del.setAttribute("onclick", "del(this)");
+        del.appendChild(document.createTextNode("del"));
+        ts.appendChild(str);
+        ts.appendChild(del);
+        document.getElementById("tasks").appendChild(ts);
+        col_task += 1;
+        document.getElementById("task").value = "";
+    }
 }
-//var a = "<li>" + document.getElementById("task").value + "<\li>";    
 
-//= "You have to make : "
+function del(element) {
+    var el = element;
+    el.parentNode.parentNode.removeChild(el.parentNode);
+    col_task+=1;
+}
+
+//Listing keyup
+
+function logKey(e) {
+    if (e.code == "Enter") {
+        add();
+    }
+}
+*/
+
+
+
