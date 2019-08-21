@@ -1,4 +1,4 @@
-﻿
+﻿/*
 var editObj = {};
 var col_task = 0;
 
@@ -24,6 +24,8 @@ $(function () {
             el_del.className = "del";
 
             el_del.appendChild(document.createTextNode("del"));
+            el.appendChild(el_del);
+
             //--------------------
             
 
@@ -54,6 +56,46 @@ $(function () {
 $(function (this) { 
     
  });
+
+*/
+
+$(function () { 
+    var obdEdit = {};
+    var counter = 0;
+    var taskList = $("ul");
+    var inputTask = $(".task");
+
+    $(".but").on(onclick, addTheTask());
+
+    var addTheTask = function () { 
+        let element = document.createElement("li");
+        element.appendChild(document.createElement("input").setAttribute("type", "checkbox"));
+        element.appendChild(document.createTextNode(inputTask.val()));
+
+        let delButton = document.createElement("button");
+        delButton.appendChild(document.createTextNode("del"));
+        delButton.className = "del";
+        delButton.onclick = "deletTask(this)";
+        element.appendChild(delButton);
+        element.ondblclick = "edit(this)";
+        taskList.append(element);
+    }
+
+    var deletTask = function (this) { 
+        $(this).parent.removeChild(this);
+    }
+
+
+    var edit = function () { 
+        obdEdit.edit = true;
+        obdEdit.obj = this;
+    }
+
+
+
+ })
+
+
 
 
 
