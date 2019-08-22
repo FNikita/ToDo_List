@@ -1,6 +1,6 @@
 ﻿function addElement(textTask, redy) {
         if ( textTask.length != 0 ){
-            $("ul").append(`<li id=\"item\"><input type=\"checkbox\" class=\"check\"> ${textTask} <button class=\"del\> del </button></li>`);
+            $("ul").append(`<li id="item"><input type="checkbox" class="check"> ${textTask} <button class="del> del </button></li>`);
             $("input#task").val("");
         }
 }
