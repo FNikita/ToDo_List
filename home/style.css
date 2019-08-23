@@ -1,10 +1,14 @@
 .note{
     background-color: lime;
     grid-template-rows: 40px 15% 60px;
-    
+    padding: 40px;
     width: 500px;
 }
 
 .item{
-    list-style-type: decimal;
+    list-style-type: none;
+}
+
+li.deleted{
+    text-decoration: line-through;
 }

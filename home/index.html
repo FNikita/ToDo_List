@@ -2,9 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="style.css">
-<script src="jquery-3.4.1.js"></script>
-
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="note">
@@ -12,16 +10,16 @@
             <input id="chek_all" type="checkbox"> enable all  <button id="del_all"> delet all enable</button>
             <ul id="list">
             </ul>
-
+                
             <br>
-
+            <div id="pag" > </div>
             <input id="task" type="text"  placeholder="add the task">  
             <button id="but" > add </button>
              <p id="all_task"> </p>
              <select>
                  <option>All</option>
-                 <option>Done</option>
-                 <option>AnDone</option>
+                 <option>Active</option>
+                 <option>Completed</option>
              </select>
     </div>            
 </body>
